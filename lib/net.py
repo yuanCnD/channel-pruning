@@ -1077,7 +1077,7 @@ class Net():
         comp = sum(l)
         print("flops", comp)
         for conv,i in zip(self.convs, l):
-            print(conv, i, int(i*1000/comp))
+            print(conv, i, int(i*100/comp))
         return comp
 
     def rescomputation(self):
